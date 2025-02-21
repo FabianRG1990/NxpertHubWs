@@ -2,6 +2,13 @@
   "name": "@nxpert-hub-ws/source",
   "version": "0.0.0",
   "license": "MIT",
+  "scripts": {
+    "test": "npx nx run-many -t test",
+    "build:only": "npx nx build NxpertHubWs",
+    "build": "npx nx build NxpertHubWs && npx nx run-many -t test",
+    "s": "npx nx build NxpertHubWs && npx nx run-many -t test && npx nx serve NxpertHubWs",
+    "r": "npx nx serve NxpertHubWs"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~19.1.0",
