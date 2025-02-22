@@ -13,7 +13,7 @@ export class componentStore extends ComponentStore<State> {
     super({
       estadoS: 'Valor por defecto',
       estadoN: 0,
-      estadoBoolean: false,
+      estadoBoolean: false
     });
   }
 
@@ -23,31 +23,30 @@ export class componentStore extends ComponentStore<State> {
 
   readonly updateEstadoS = this.updater((state) => ({
     ...state,
-    estadoS: 'Actualizado',
+    estadoS: 'Actualizado'
   }));
 
   readonly updateEstadoN = this.updater((state) => ({
     ...state,
-    estadoN: 2525,
+    estadoN: 2525
   }));
 
   readonly updateEstadoBoolean = this.updater((state) => ({
     ...state,
-    estadoBoolean: true,
+    estadoBoolean: true
   }));
 
   readonly updateAll = this.updater((state) => ({
     ...state,
     estadoS: 'Actualizado en conjunto',
     estadoN: 999,
-    estadoBoolean: false,
+    estadoBoolean: false
   }));
 
-  // Método para limpiar el estado
   readonly resetState = this.updater((state) => ({
     ...state,
     estadoS: 'Valor por defecto',
     estadoN: 0,
-    estadoBoolean: false,
+    estadoBoolean: false
   }));
 }

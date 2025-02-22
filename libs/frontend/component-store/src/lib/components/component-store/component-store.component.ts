@@ -11,7 +11,7 @@ import { LetDirective, PushPipe } from '@ngrx/component';
   templateUrl: 'component-store.component.html',
   styleUrl: 'component-store.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [provideComponentStore(componentStore)],
+  providers: [provideComponentStore(componentStore)]
 })
 export class StoreComponent {
   readonly componentStore = inject(componentStore);
