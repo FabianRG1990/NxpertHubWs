@@ -2,7 +2,13 @@
   "name": "@nxpert-hub-ws/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "test": "npx nx run-many -t test",
+    "build:only": "npx nx build NxpertHubWs",
+    "build": "npx nx build NxpertHubWs && npx nx run-many -t test",
+    "s": "npx nx build NxpertHubWs && npx nx run-many -t test && npx nx serve NxpertHubWs",
+    "r": "npx nx serve NxpertHubWs"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~19.1.0",
@@ -15,6 +21,12 @@
     "@angular/platform-server": "~19.1.0",
     "@angular/router": "~19.1.0",
     "@angular/ssr": "~19.1.0",
+    "@ngrx/component": "^19.0.1",
+    "@ngrx/component-store": "^19.0.1",
+    "@ngrx/effects": "^19.0.1",
+    "@ngrx/operators": "^19.0.1",
+    "@ngrx/store": "^19.0.1",
+    "@ngrx/store-devtools": "^19.0.1",
     "express": "^4.21.2",
     "rxjs": "~7.8.0",
     "zone.js": "~0.15.0"
@@ -58,5 +70,6 @@
     "tslib": "^2.3.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.19.0"
-  }
+  },
+  "packageManager": "yarn@4.5.2+sha512.570504f67349ef26d2d86a768dc5ec976ead977aa086b0bb4237e97d5db7ae5c620f9f0e0edf3ea5047205063faff102bf2a2d778664a94eaaa1085ad483fe2e"
 }
