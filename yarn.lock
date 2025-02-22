@@ -3827,6 +3827,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ngrx/operators@npm:^19.0.1":
+  version: 19.0.1
+  resolution: "@ngrx/operators@npm:19.0.1"
+  dependencies:
+    tslib: "npm:^2.3.0"
+  peerDependencies:
+    rxjs: ^6.5.3 || ^7.4.0
+  checksum: 4f4839b65fc89566c40e0e03fbbea20e31a50215b940664d5eb8dfe1928924ca98673b9408b7e1467cd77714a7cc9655159d61eeec3f4543ae110a38d6a4249c
+  languageName: node
+  linkType: hard
+
 "@ngrx/store-devtools@npm:^19.0.1":
   version: 19.0.1
   resolution: "@ngrx/store-devtools@npm:19.0.1"
@@ -4355,6 +4366,7 @@ __metadata:
     "@ngrx/component": "npm:^19.0.1"
     "@ngrx/component-store": "npm:^19.0.1"
     "@ngrx/effects": "npm:^19.0.1"
+    "@ngrx/operators": "npm:^19.0.1"
     "@ngrx/store": "npm:^19.0.1"
     "@ngrx/store-devtools": "npm:^19.0.1"
     "@nx/angular": "npm:20.4.5"

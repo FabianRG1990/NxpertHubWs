@@ -1,1 +1,22 @@
-<p>ComponentStore works!</p>
+<div
+  class="key-controls"
+  *ngrxLet="{
+  estadoS: componentStore.estadoS$| ngrxPush,
+  estadoN: componentStore.estadoN$| ngrxPush,
+  estadoBoolean: componentStore.estadoBoolean$| ngrxPush,
+} as vm"
+>
+  <button (click)="componentStore.updateEstadoS()">Actualizar estado 1</button>
+  <button (click)="componentStore.updateEstadoN()">Actualizar estado 2</button>
+  <button (click)="componentStore.updateEstadoBoolean()">
+    Actualizar estado 3
+  </button>
+  <button (click)="componentStore.updateAll()">Actualizar Todas</button>
+  <button (click)="componentStore.resetState()">Limpiar Estado</button>
+
+  <div class="key-values">
+    <p>Estado 1: {{ vm.estadoS }}</p>
+    <p>Estado 2: {{ vm.estadoN }}</p>
+    <p>Estado 3: {{ vm.estadoBoolean }}</p>
+  </div>
+</div>
